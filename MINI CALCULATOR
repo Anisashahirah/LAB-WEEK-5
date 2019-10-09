@@ -1,0 +1,57 @@
+// lab week 5 
+//NURUL ANISA SHAHIRAH BINTI MAT ROPI
+#include <iostream>
+#include <string>
+using namespace std;
+int x=0,y=0;
+string name;
+
+int main()
+{
+  cout << "please enter your name";
+  getline(cin,name);
+  cout << "please enter a value for x";
+  cin>> x;
+  cout << "please enter a value for y";
+  cin>> y;
+  if ( x>0 && y>0)
+        cout << "you enter a positive number";
+ else 
+    cout <<"please enter a positive number";
+ 
+    char a,b,c,d;
+    double sum=0 , difference=0 , multiplication=0 , division=0;
+    
+    cout << "please choose an operator a) sum \n b) difference \n c) multiplication \n d) division \n ";
+    
+    char alphabet;
+    cin >> alphabet;
+    
+    if (alphabet == 'a')
+    {
+        sum=x+y;
+        cout << "sum = "<< sum<< endl;
+    }
+    else if ( alphabet=='b')
+    {
+        difference=x-y;
+        cout << "difference = "<< difference<< endl;
+     }
+    else if (alphabet== 'c ')
+    {
+        multiplication = x*y;
+        cout << "multiplication = "<< multiplication<< endl;
+    }
+    else if ( alphabet== 'd')
+    {
+        division = x/y;
+        cout << "division = "<< division << endl;
+    }
+    else
+    {
+        
+        cout << "please insert a valid operator";
+    }
+        
+    return 0;
+}
